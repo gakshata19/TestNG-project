@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Groups">
+  <test thread-count="5" name="Test">
+  	<groups>
+  			<run>
+  				<exclude name="Sanity Testing"/>
+  			</run>
+  	</groups>
+    <classes>
+      <class name="TestLayer.Groups"/>
+      <class name="TestLayer.Softdepend"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
